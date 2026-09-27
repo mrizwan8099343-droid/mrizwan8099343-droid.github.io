@@ -308,6 +308,142 @@ font-size: 42px !important;
   margin-top: 20px;
   text-shadow: 0 0 15px #00bfff;
 }
+<style>
+/* ===== Professional Animations ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: pageLoad 1s ease;
+}
+
+/* Smooth glowing buttons */
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+/* Container hover effect */
+.container {
+    transition: all 0.4s ease;
+}
+
+.container:hover {
+    box-shadow:
+        0 0 25px rgba(0, 191, 255, 0.35),
+        0 0 50px rgba(0, 191, 255, 0.15);
+}
+
+/* Headings glow */
+h1, h2 {
+    animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+/* Profile photo */
+.profile-photo {
+    transition: all 0.4s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.06);
+    box-shadow:
+        0 0 20px rgba(0, 191, 255, 0.7),
+        0 0 40px rgba(0, 191, 255, 0.3);
+}
+
+/* Page loading animation */
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Blue glowing animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
+    }
+    to {
+        text-shadow:
+            0 0 10px rgba(0, 191, 255, 0.8),
+            0 0 25px rgba(0, 191, 255, 0.4);
+    }
+}
+</style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: pageLoad 1s ease;
+}
+
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+.container {
+    transition: all 0.4s ease;
+}
+
+.container:hover {
+    box-shadow:
+        0 0 25px rgba(0, 191, 255, 0.35),
+        0 0 50px rgba(0, 191, 255, 0.15);
+}
+
+h1, h2 {
+    animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+.profile-photo {
+    transition: all 0.4s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.06);
+    box-shadow:
+        0 0 20px rgba(0, 191, 255, 0.7),
+        0 0 40px rgba(0, 191, 255, 0.3);
+}
+
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
+    }
+    to {
+        text-shadow:
+            0 0 10px rgba(0, 191, 255, 0.8),
+            0 0 25px rgba(0, 191, 255, 0.4);
+    }
+}
 </style>
 
 <body>
