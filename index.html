@@ -406,8 +406,8 @@ h1, h2 {
             0 0 10px rgba(0, 191, 255, 0.8),
             0 0 25px rgba(0, 191, 255, 0.4);
     }
+
 }
-</style>
 html {
     scroll-behavior: smooth;
 }
@@ -430,9 +430,8 @@ button:hover, a:hover {
 }
 
 .container:hover {
-    box-shadow:
-        0 0 25px rgba(0, 191, 255, 0.35),
-        0 0 50px rgba(0, 191, 255, 0.15);
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.35),
+                0 0 50px rgba(0, 191, 255, 0.15);
 }
 
 h1, h2 {
@@ -445,33 +444,12 @@ h1, h2 {
 
 .profile-photo:hover {
     transform: scale(1.06);
-    box-shadow:
-        0 0 20px rgba(0, 191, 255, 0.7),
-        0 0 40px rgba(0, 191, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.7),
+                0 0 40px rgba(0, 191, 255, 0.3);
 }
 
-@keyframes pageLoad {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
-    }
-    to {
-        text-shadow:
-            0 0 10px rgba(0, 191, 255, 0.8),
-            0 0 25px rgba(0, 191, 255, 0.4);
-    }
-}
 /* Skills Section */
+
 #skills {
     margin-top: 50px;
     text-align: center;
@@ -506,7 +484,6 @@ h1, h2 {
     color: white;
 }
 
-/* Scroll Reveal */
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -518,13 +495,33 @@ h1, h2 {
     transform: translateY(0);
 }
 
-/* Mobile */
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(0, 191, 255, 0.8),
+                     0 0 25px rgba(0, 191, 255, 0.4);
+    }
+}
+
 @media (max-width: 600px) {
     .skills-container {
         grid-template-columns: 1fr;
     }
 }
-</style>
+   </style>
 
 <body>
 
