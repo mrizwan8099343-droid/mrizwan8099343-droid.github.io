@@ -5,6 +5,33 @@
 
    <style>
 body {
+     <section id="skills" class="reveal">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Building clean and structured web pages.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Creating modern designs, layouts and animations.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Adding interaction and functionality to websites.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>GitHub</h3>
+            <p>Managing and publishing web projects online.</p>
+        </div>
+
+    </div>
+</section>
     background-color: lightblue;
 }
 
@@ -444,6 +471,59 @@ h1, h2 {
             0 0 25px rgba(0, 191, 255, 0.4);
     }
 }
+/* Skills Section */
+#skills {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.skill-card {
+    padding: 25px;
+    background: #111722;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+    transition: 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.6);
+}
+
+.skill-card h3 {
+    color: #00bfff;
+}
+
+.skill-card p {
+    color: white;
+}
+
+/* Scroll Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 
 <body>
@@ -498,6 +578,22 @@ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
     alert("Thank you for contacting me!");
 });
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+    reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            element.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
 </script>
 <form class="contact-form" onsubmit="alert('Thank you for contacting me!'); return false;">
     <input type="text" placeholder="Your Name" value="Rizwan" required style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box; border: 1px solid #00bfff; border-radius: 10px; background: #111; color: white;">
