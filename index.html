@@ -1,609 +1,515 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-     <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
 
-   <style>
-body {
-    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <div class="skills-container">
+        html {
+            scroll-behavior: smooth;
+        }
 
-        <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Building clean and structured web pages.</p>
-        </div>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 40px 20px;
+            animation: pageLoad 1s ease;
+        }
 
-        <div class="skill-card">
-            <h3>CSS</h3>
-            <p>Creating modern designs, layouts and animations.</p>
-        </div>
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 191, 255, 0.25);
+            transition: all 0.4s ease;
+        }
 
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Adding interaction and functionality to websites.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>GitHub</h3>
-            <p>Managing and publishing web projects online.</p>
-        </div>
-
-    </div>
-</section>
-    background-color: lightblue;
-}
-
-h1 {
-    color: darkblue;
-}
-
-h2 {
-    color: green;
-}
-form {
-    margin-top: 20px;
-}
-
-input, textarea {
-    display: block;
-    width: 300px;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-textarea {
-    height: 100px;
-}
-
-form button {
-    padding: 10px 20px;
-}
-
-p {
-    color: black;
-    font-size: 20px;
-}
-
-button {
-    background-color: darkblue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    margin: 0;
-    padding: 40px;
-}
-
-h1 {
-    color: #00bfff;
-}
-
-h2 {
-    color: #00ff99;
-}
-
-p {
-    font-size: 18px;
-    color: #dddddd;
-}
-
-a {
-    color: #00bfff;
-}
-
-input,
-textarea {
-    width: 300px;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #222222;
-    color: white;
-    border: 1px solid #555555;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #00bfff;
-    color: #000000;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #00ff99;
-}body {
-    background-color: #121212 !important;
-    color: white !important;
-}
-.container {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #1e1e1e;
-    border-radius: 15px;
-    box-shadow: 0 0 25px rgba(0, 191, 255, 0.25);
-}
-
-p {
-    color: #ffffff !important;
-}
-
-h1 {
-    color: #00bfff !important;
-}
-
-h2 {
-    color: #00ff99 !important;
-}
-
-a {
-    color: #00bfff !important;
-}
-
-.role {
-    text-align: center;
-    color: #00ff99;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 5px 0 25px;
-}
-
-.about {
-    background-color: #252525;
-    padding: 20px;
-    margin-top: 15px;
-    border: 1px solid #00bfff;
-    border-left: 5px solid #00bfff;
-    border-radius: 10px;
-    color: #ffffff;
-    line-height: 1.7;
-    box-shadow: 0 0 15px rgba(0, 191, 255, 0.15);
-}
-.contact-form {
-    background-color: #252525;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 1px solid #00bfff;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    padding: 12px;
-    background-color: #151515;
-    color: white;
-    border: 1px solid #555;
-    border-radius: 6px;
-}
-
-.contact-form textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-.contact-form button {
-    background-color: #00bfff;
-    color: black;
-    font-weight: bold;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #00ff99;
-}
-nav {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 15px;
-    background-color: #151515;
-    border-radius: 10px;
-    border: 1px solid #00bfff;
-}
-
-nav a {
-    color: #00bfff;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    color: #00ff99;
-}
-button {
-    transition: 0.3s;
-}
-
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #00bfff;
-}
-.profile-photo {
-    display: block;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 20px auto;
-    border: 3px solid #00bfff;
-    box-shadow: 0 0 20px #00bfff;
-}
-.project {
-    border: 2px solid #00bfff;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px 0;
-    background-color: #222;
-    box-shadow: 0 0 10px #00bfff;
-}
-
-.project h3 {
-    color: #00bfff;
-}
-
-.project p {
-    color: white;
-    font-size: 16px;
-}
-button {
-    background-color: #00bfff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #008fcc;
-}
-button:hover {
-    background-color: #008fcc;
-}
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: #00bfff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    padding: 5px 10px;
-}
-
-nav a:hover {
-    color: white !important;
-    background-color: #00bfff;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    color: #00bfff;
-    font-size: 14px;
-    padding: 15px;
-    margin-top: 20px;
-    border-top: 1px solid #00bfff;
-}
-.contact-form {
-    border: 2px solid #00bfff;
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: 15px;
-    box-shadow: 0 0 10px #00bfff;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #111;
-    color: white;
-    border: 1px solid #00bfff;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 8px 0;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 8px #00bfff;
-}
-        #home {
-  text-align: center !important;
-font-size: 42px !important;
-  margin-top: 20px;
-  text-shadow: 0 0 15px #00bfff;
-}
-<style>
-/* ===== Professional Animations ===== */
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    animation: pageLoad 1s ease;
-}
-
-/* Smooth glowing buttons */
-button, a {
-    transition: all 0.3s ease;
-}
-
-button:hover, a:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.2);
-}
-
-/* Container hover effect */
-.container {
-    transition: all 0.4s ease;
-}
-
-.container:hover {
-    box-shadow:
-        0 0 25px rgba(0, 191, 255, 0.35),
-        0 0 50px rgba(0, 191, 255, 0.15);
-}
-
-/* Headings glow */
-h1, h2 {
-    animation: glow 2.5s ease-in-out infinite alternate;
-}
-
-/* Profile photo */
-.profile-photo {
-    transition: all 0.4s ease;
-}
-
-.profile-photo:hover {
-    transform: scale(1.06);
-    box-shadow:
-        0 0 20px rgba(0, 191, 255, 0.7),
-        0 0 40px rgba(0, 191, 255, 0.3);
-}
-
-/* Page loading animation */
-@keyframes pageLoad {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Blue glowing animation */
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
-    }
-    to {
-        text-shadow:
-            0 0 10px rgba(0, 191, 255, 0.8),
-            0 0 25px rgba(0, 191, 255, 0.4);
-    }
-
-}
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    animation: pageLoad 1s ease;
-}
-
-button, a {
-    transition: all 0.3s ease;
-}
-
-button:hover, a:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.2);
-}
-
-.container {
-    transition: all 0.4s ease;
-}
-
-.container:hover {
-    box-shadow: 0 0 25px rgba(0, 191, 255, 0.35),
+        .container:hover {
+            box-shadow:
+                0 0 25px rgba(0, 191, 255, 0.35),
                 0 0 50px rgba(0, 191, 255, 0.15);
-}
+        }
 
-h1, h2 {
-    animation: glow 2.5s ease-in-out infinite alternate;
-}
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #151515;
+            border-radius: 10px;
+            border: 1px solid #00bfff;
+        }
 
-.profile-photo {
-    transition: all 0.4s ease;
-}
+        nav a {
+            color: #00bfff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
 
-.profile-photo:hover {
-    transform: scale(1.06);
-    box-shadow: 0 0 20px rgba(0, 191, 255, 0.7),
+        nav a:hover {
+            color: white;
+            background-color: #00bfff;
+            border-radius: 5px;
+            transform: translateY(-3px);
+        }
+
+        .profile-photo {
+            display: block;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px auto;
+            border: 3px solid #00bfff;
+            box-shadow: 0 0 20px #00bfff;
+            transition: all 0.4s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.06);
+            box-shadow:
+                0 0 20px rgba(0, 191, 255, 0.7),
                 0 0 40px rgba(0, 191, 255, 0.3);
-}
+        }
 
-/* Skills Section */
+        h1,
+        h2 {
+            animation: glow 2.5s ease-in-out infinite alternate;
+        }
 
-#skills {
-    margin-top: 50px;
-    text-align: center;
-}
+        #home {
+            text-align: center;
+            font-size: 42px;
+            margin-top: 20px;
+            color: #00bfff;
+            text-shadow: 0 0 15px #00bfff;
+        }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 700px;
-    margin: 30px auto;
-}
+        h2 {
+            color: #00ff99;
+            text-align: center;
+        }
 
-.skill-card {
-    padding: 25px;
-    background: #111722;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
-    transition: 0.4s ease;
-}
+        p {
+            font-size: 18px;
+            color: #dddddd;
+        }
 
-.skill-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 0 25px rgba(0, 191, 255, 0.6);
-}
+        .role {
+            text-align: center;
+            color: #00bfff !important;
+            font-size: 32px !important;
+            font-weight: bold;
+            margin: 5px 0 25px;
+            text-shadow: 0 0 15px #00bfff;
+        }
 
-.skill-card h3 {
-    color: #00bfff;
-}
+        .about {
+            background-color: #252525;
+            padding: 20px;
+            margin-top: 15px;
+            border: 1px solid #00bfff;
+            border-left: 5px solid #00bfff;
+            border-radius: 10px;
+            color: #ffffff !important;
+            line-height: 1.8;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.15);
+            text-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+        }
 
-.skill-card p {
-    color: white;
-}
+        .hero-button,
+        button {
+            background-color: #00bfff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: 0.8s ease;
-}
+        .hero-button {
+            display: inline-block;
+            padding: 12px 25px;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 0 15px #00bfff;
+        }
 
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
+        button:hover,
+        .hero-button:hover,
+        a:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.2);
+        }
 
-@keyframes pageLoad {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        .project {
+            border: 2px solid #00bfff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #222;
+            box-shadow: 0 0 10px #00bfff;
+        }
 
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
-    }
-    to {
-        text-shadow: 0 0 10px rgba(0, 191, 255, 0.8),
-                     0 0 25px rgba(0, 191, 255, 0.4);
-    }
-}
+        .project h3 {
+            color: #00bfff;
+            text-align: center;
+        }
 
-@media (max-width: 600px) {
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-}
-   </style>
+        .project p {
+            color: white;
+            font-size: 16px;
+        }
+
+        .project-button,
+        .contact-link-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #00bfff;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 0 15px #00bfff;
+            cursor: pointer;
+        }
+
+        .contact-link-button {
+            margin-top: 5px;
+        }
+
+        .contact-form {
+            background-color: #252525;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 2px solid #00bfff;
+            box-shadow: 0 0 10px #00bfff;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 8px 0;
+            padding: 12px;
+            background-color: #111;
+            color: white;
+            border: 1px solid #00bfff;
+            border-radius: 10px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            box-shadow: 0 0 8px #00bfff;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background: #00bfff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 15px #00bfff;
+        }
+
+        #contactInfo {
+            margin-top: 20px;
+        }
+
+        #contactInfo p {
+            color: white;
+        }
+
+        #contactInfo a {
+            color: #00bfff;
+        }
+
+        /* Skills Section */
+        #skills {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 700px;
+            margin: 30px auto;
+        }
+
+        .skill-card {
+            padding: 25px;
+            background: #111722;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+            transition: 0.4s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 0 25px rgba(0, 191, 255, 0.6);
+        }
+
+        .skill-card h3 {
+            color: #00bfff;
+        }
+
+        .skill-card p {
+            color: white;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            color: #00bfff;
+            font-size: 14px;
+            padding: 15px;
+            margin-top: 30px;
+            border-top: 1px solid #00bfff;
+        }
+
+        @keyframes pageLoad {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
+            }
+            to {
+                text-shadow:
+                    0 0 10px rgba(0, 191, 255, 0.8),
+                    0 0 25px rgba(0, 191, 255, 0.4);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                margin: 15px auto;
+                padding: 20px;
+            }
+
+            nav a {
+                margin: 0 5px;
+            }
+
+            #home {
+                font-size: 32px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
 
 <body>
-<section id="skills" class="reveal">
-        <h2>My Skills</h2>
-<div class="container">
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
-   <img src="rizwan.jpg" alt="Rizwan" class="profile-photo">
-<h1 id="home" style="font-size: 42px !important;">Hi, I'm Muhammad Rizwan 👋</h1>
+    <div class="container">
 
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-<a href="#about" style="display: inline-block; padding: 12px 25px; background: #00bfff; color: #ffffff !important; text-decoration: none; border-radius: 25px; font-weight: bold; box-shadow: 0 0 15px #00bfff;">Learn More About Me</a>
-     <p>Welcome to my personal website.</p>
-<p class="role" style="font-size: 32px !important; color: #00bfff !important; text-shadow: 0 0 15px #00bfff; font-weight: bold; text-align: center;">Web Developer</p>
-<button onclick="alert('Welcome to my website!')" style="font-size: 20px; padding: 12px 30px; background: #00bfff; color: white !important; border: none; border-radius: 25px; font-weight: bold; box-shadow: 0 0 15px #00bfff; cursor: pointer;">Click Me</button>
-   <h2 id="about">About Me</h2>
+        <img src="rizwan.jpg" alt="Rizwan" class="profile-photo">
 
-<p class="about" style="font-size: 22px; line-height: 1.8; color: white; text-align: center; text-shadow: 0 0 8px rgba(0, 191, 255, 0.5);">    My name is Muhammad Rizwan. I am learning IT and Web Development.
-    I enjoy creating websites and learning new coding skills.
-</p>
-<h2 id="projects" style="font-size: 38px; color: #00bfff; text-align: center; text-shadow: 0 0 15px #00bfff; margin-bottom: 20px;">My Projects</h2>
+        <h1 id="home">Hi, I'm Muhammad Rizwan 👋</h1>
 
-<div class="project" style="padding: 25px; margin: 20px auto; max-width: 600px; background: #1e1e1e; border: 1px solid #00bfff; border-radius: 15px; box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);">
- <h3 style="font-size: 28px; color: #00bfff; text-align: center; text-shadow: 0 0 10px #00bfff; margin-bottom: 15px;">My First Website</h3>
-    <p>This is my first personal website created using HTML and CSS.</p>
-    <button onclick="window.location.href='project.html'" style="font-size: 18px; padding: 10px 25px; background: #00bfff; color: white !important; border: none; border-radius: 25px; font-weight: bold; box-shadow: 0 0 15px #00bfff; cursor: pointer;">View Project</button>
+        <div style="text-align: center;">
+            <a href="#about" class="hero-button">Learn More About Me</a>
+        </div>
 
-<div class="project">
-    <h3 style="font-size: 28px; color: #00bfff; text-align: center; text-shadow: 0 0 10px #00bfff; margin-bottom: 15px;">Coming Soon</h3>
-    <p style="font-size: 18px; line-height: 1.6; color: white; text-align: center; text-shadow: 0 0 6px rgba(0, 191, 255, 0.4);">More exciting web development projects will be added here.</p>>
-   <a href="#" style="display: block; width: fit-content; margin: 15px auto; padding: 10px 25px; background: #1e1e1e; color: #00bfff !important; text-decoration: none; border: 1px solid #00bfff; border-radius: 25px; font-weight: bold; box-shadow: 0 0 12px rgba(0, 191, 255, 0.5); cursor: not-allowed;">Coming Soon</a>
-</div>
-<a href="#contact" style="display: inline-block; padding: 12px 25px; background: #00bfff; color: white !important; text-decoration: none; border-radius: 25px; font-weight: bold; box-shadow: 0 0 15px #00bfff; cursor: pointer;">Contact Me</a> <h2 id="contact" style="font-size: 38px; color: #00bfff; text-align: center; text-shadow: 0 0 15px #00bfff; margin-bottom: 20px;">Contact Me</h2>
-    <p style="font-size: 20px; line-height: 1.6; color: white; text-align: center; text-shadow: 0 0 8px rgba(0, 191, 255, 0.5);">
-I am learning IT and Web Development.
-</p>
-<div id="contactInfo" style="display:none;">
-    <p style="font-size: 18px; color: white; margin: 15px 0; text-shadow: 0 0 6px rgba(0, 191, 255, 0.4);">📱 WhatsApp: <a href="https://wa.me/923208099343">Chat on WhatsApp</a></p>
-    <p>📧 Email: <a href="mailto:muhammadrizwanjohar@gmail.com">Send Email</a></p>
-   <p>📍 Location: <a href="https://www.google.com/maps/search/?api=1&query=Pakistan" target="_blank">View on Google Maps</a></p>
-</div>
-<button onclick="contactMe()">Contact Me</button>
-<script>
-   function contactMe() {
-    document.getElementById("contactInfo").style.display = "block";
-}
-document.getElementById("contactInfo").style.display = "block";
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Thank you for contacting me!");
-});
-const reveals = document.querySelectorAll(".reveal");
+        <p style="text-align: center;">Welcome to my personal website.</p>
 
-function revealOnScroll() {
-    reveals.forEach((element) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
+        <p class="role">Web Developer</p>
 
-        if (elementTop < windowHeight - 100) {
-            element.classList.add("active");
+        <div style="text-align: center;">
+            <button onclick="alert('Welcome to my website!')" style="font-size: 20px; padding: 12px 30px; border-radius: 25px; font-weight: bold; box-shadow: 0 0 15px #00bfff;">
+                Click Me
+            </button>
+        </div>
+
+        <h2 id="about">About Me</h2>
+
+        <p class="about">
+            My name is Muhammad Rizwan. I am learning IT and Web Development.
+            I enjoy creating websites and learning new coding skills.
+        </p>
+
+        <h2 id="skills" class="reveal">My Skills</h2>
+
+        <div class="skills-container reveal">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Building clean and structured web pages.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Creating modern designs, layouts and animations.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Adding interaction and functionality to websites.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>GitHub</h3>
+                <p>Managing and publishing web projects online.</p>
+            </div>
+        </div>
+
+        <h2 id="projects" style="font-size: 38px; color: #00bfff; text-align: center; text-shadow: 0 0 15px #00bfff; margin-bottom: 20px;">
+            My Projects
+        </h2>
+
+        <div class="project">
+            <h3 style="font-size: 28px; text-shadow: 0 0 10px #00bfff; margin-bottom: 15px;">
+                My First Website
+            </h3>
+            <p>This is my first personal website created using HTML and CSS.</p>
+
+            <div style="text-align: center;">
+                <button onclick="window.location.href='project.html'" class="project-button">
+                    View Project
+                </button>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3 style="font-size: 28px; text-shadow: 0 0 10px #00bfff; margin-bottom: 15px;">
+                Coming Soon
+            </h3>
+            <p style="font-size: 18px; line-height: 1.6; color: white; text-align: center;">
+                More exciting web development projects will be added here.
+            </p>
+
+            <a href="#" style="display: block; width: fit-content; margin: 15px auto; padding: 10px 25px; background: #1e1e1e; color: #00bfff !important; text-decoration: none; border: 1px solid #00bfff; border-radius: 25px; font-weight: bold; box-shadow: 0 0 12px rgba(0, 191, 255, 0.5); cursor: not-allowed;">
+                Coming Soon
+            </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 25px;">
+            <a href="#contact" class="contact-link-button">Contact Me</a>
+        </div>
+
+        <h2 id="contact" style="font-size: 38px; color: #00bfff; text-align: center; text-shadow: 0 0 15px #00bfff; margin-bottom: 20px;">
+            Contact Me
+        </h2>
+
+        <p style="font-size: 20px; line-height: 1.6; color: white; text-align: center; text-shadow: 0 0 8px rgba(0, 191, 255, 0.5);">
+            I am learning IT and Web Development.
+        </p>
+
+        <div id="contactInfo" style="display: none;">
+            <p style="font-size: 18px; color: white; margin: 15px 0;">
+                📱 WhatsApp:
+                <a href="https://wa.me/923208099343">Chat on WhatsApp</a>
+            </p>
+
+            <p>
+                📧 Email:
+                <a href="mailto:muhammadrizwanjohar@gmail.com">Send Email</a>
+            </p>
+
+            <p>
+                📍 Location:
+                <a href="https://www.google.com/maps/search/?api=1&query=Pakistan" target="_blank">
+                    View on Google Maps
+                </a>
+            </p>
+        </div>
+
+        <div style="text-align: center;">
+            <button onclick="contactMe()" style="font-size: 18px; padding: 12px 25px; border-radius: 25px; font-weight: bold;">
+                Contact Me
+            </button>
+        </div>
+
+        <form class="contact-form" onsubmit="alert('Thank you for contacting me!'); return false;">
+            <input type="text" placeholder="Your Name" value="Rizwan" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <footer>
+            © 2026 Muhammad Rizwan | All Rights Reserved
+        </footer>
+
+    </div>
+
+    <script>
+        function contactMe() {
+            document.getElementById("contactInfo").style.display = "block";
         }
-    });
-}
 
-window.addEventListener("scroll", revealOnScroll);
+        const reveals = document.querySelectorAll(".reveal");
 
-revealOnScroll();
-</script>
-<form class="contact-form" onsubmit="alert('Thank you for contacting me!'); return false;">
-    <input type="text" placeholder="Your Name" value="Rizwan" required style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box; border: 1px solid #00bfff; border-radius: 10px; background: #111; color: white;">
-   <input type="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box; border: 1px solid #00bfff; border-radius: 10px; background: #111; color: white;">
-    <textarea placeholder="Your Message" required style="width: 100%; height: 120px; padding: 12px; margin: 8px 0; box-sizing: border-box; border: 1px solid #00bfff; border-radius: 10px; background: #111; color: white;"></textarea>
-    <button type="submit" style="width: 100%; padding: 15px; background: #00bfff; color: white; border: none; border-radius: 10px; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px #00bfff;">
-    Send Message
-</button>
-</form>
+        function revealOnScroll() {
+            reveals.forEach((element) => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
 
-<footer>
-    © 2026 Muhammad Rizwan | All Rights Reserved
-</footer>
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add("active");
+                }
+            });
+        }
 
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    </script>
 </body>
 </html>
